@@ -15,11 +15,7 @@
 (load-theme 'wombat)
 
 (package-initialize)
-;; (package-refresh-contents)
 
-;; 下载 Evil
-;; (unless (package-installed-p 'evil)
-;;  (package-install 'evil))
 
 (require 'company)
 (company-mode 1)
@@ -27,23 +23,5 @@
 ;; 激活 Evil
 (require 'evil)
 (evil-mode 1)
-
-;; 下载 elpy
-;; (unless (package-installed-p 'elpy)
-;;   (package-install 'elpy))
-
-;; 激活 Evil
-(require 'elpy)
-(elpy-enable)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Microsoft YaHei UI" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+;; 设置快捷键
+(global-set-key (kbd "<f1>") 'func)
